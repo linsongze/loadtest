@@ -1,9 +1,9 @@
-package main
+package loadtest
 
 import (
+	"fmt"
 	"runtime"
 	"time"
-	"fmt"
 )
 
 type Runner struct {
