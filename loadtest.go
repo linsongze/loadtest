@@ -32,6 +32,7 @@ func (runner *Runner) Start(){
 	for i:=0;i<runner.threamNum ;i++  {
 		go func() {
 			for ; ;  {
+				runner.runfunction()
 				atomic.AddInt64(runner.nowTimes, 1)
 			}
 		}()
